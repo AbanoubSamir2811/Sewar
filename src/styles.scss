@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'animate.css';
+
+$mainColor: rgba(248, 247, 250, 1);
+
+*{
+  font-family: "Tajawal", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $mainColor;
+}
