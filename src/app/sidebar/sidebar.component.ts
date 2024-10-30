@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   trigger,
@@ -11,7 +11,6 @@ import {
   stagger,
 } from '@angular/animations';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { TitlesService } from '../titles.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -20,15 +19,19 @@ import { TitlesService } from '../titles.service';
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit{
   isActive = false;
   currentActiveButton = 1;
-  labels;
-  constructor(private titleService: TitlesService) {
-    this.labels = titleService.labels;
+
+  ngOnInit(): void {
+    console.log(localStorage.getItem("number"))
+    if(localStorage.getItem("number")){
+      this.changeActiveButton(Number(localStorage.getItem("number")))
+    }
   }
 
   changeActiveButton(buttonNumber : number) : void{
+    localStorage.setItem("number",buttonNumber.toString())
     if(this.currentActiveButton < buttonNumber){
       for(let i = this.currentActiveButton; i<= buttonNumber; i++){
         var timeOut = i - this.currentActiveButton;

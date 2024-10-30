@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
 import { NavbarComponent } from "./navbar/navbar.component";
-import { NotifictionSidebarComponent } from "./notifiction-sidebar/notifiction-sidebar.component";
+import { NotifictionSidebarComponent } from "./components/notifiction-sidebar/notifiction-sidebar.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 
 @Component({

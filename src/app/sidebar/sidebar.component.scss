@@ -6,4 +6,10 @@ svg {
   color: #706D79  ; /* New color when active */
 }
 
+.translUp{
+  transform: translateY(-50px);
+}
 
+.translDown{
+  transform: translateY(50px);
+}
