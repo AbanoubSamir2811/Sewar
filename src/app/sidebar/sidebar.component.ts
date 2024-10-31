@@ -48,7 +48,6 @@ export class SidebarComponent implements OnInit{
 
 
     if(this.currentActiveButton > buttonNumber){
-      debugger;
       for(let i = this.currentActiveButton - 1; i >= buttonNumber; i--){
         var timeOut = this.currentActiveButton - i;
         if(timeOut == 0){
