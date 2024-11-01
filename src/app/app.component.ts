@@ -2,9 +2,9 @@ import { routes } from './app.routes';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
-import { NavbarComponent } from "./navbar/navbar.component";
-import { NotifictionSidebarComponent } from "./components/notifiction-sidebar/notifiction-sidebar.component";
-import { SidebarComponent } from "./sidebar/sidebar.component";
+import { NavbarComponent } from "./modules/navbar/navbar.component";
+import { NotifictionSidebarComponent } from "./modules/notificationModule/notifiction-sidebar/notifiction-sidebar.component";
+import { SidebarComponent } from './modules/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',

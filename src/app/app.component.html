@@ -1,10 +1,10 @@
 <div class="flex justify-evenly">
   <div class="flex flex-col">
     <app-navbar></app-navbar>
-    <div class="flex justify-between">
-      <app-notifiction-sidebar></app-notifiction-sidebar>
+    <div class="flex md:justify-between">
+      <app-notifiction-sidebar class="md:block hidden"></app-notifiction-sidebar>
       <router-outlet></router-outlet>
     </div>
   </div>
-  <app-sidebar></app-sidebar>
+  <app-sidebar class="md:block hidden"></app-sidebar>
 </div>

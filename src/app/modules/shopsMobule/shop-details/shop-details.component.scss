@@ -1,0 +1,76 @@
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E2E8F0;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 22px;
+  width: 22px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #C6F6D5;
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+  background-color: red;
+}
+
+input + .slider .check-icon {
+  opacity: 1;
+}
+
+input:checked + .slider .check-icon {
+  display: none;
+}
+
+.label-text {
+  color: #4A4A4A;
+  font-weight: 500;
+}

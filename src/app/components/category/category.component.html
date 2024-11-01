@@ -1,0 +1,9 @@
+<div>
+  <h4>{{ category.name }}</h4>
+  <ul *ngIf="category.subcategories?.length">
+    <li *ngFor="let subcategory of category.subcategories">
+      <!-- Recursively render the component for each subcategory -->
+      <app-category [category]="subcategory"></app-category>
+    </li>
+  </ul>
+</div>
