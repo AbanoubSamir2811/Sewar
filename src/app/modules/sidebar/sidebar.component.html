@@ -1,10 +1,10 @@
-<div class="md:mt-[24px] mt-0 md:w-[20vw] w-[80vw] rounded-[16px] p-[16px] bg-white md:block">
-  <div class="flex justify-center items-center bg-[#F8F7FA] w-full h-[153px] rounded-[24px]">
+<div class="md:mt-[24px] mt-0 md:w-[20vw] w-[75vw] h-[720px] rounded-[16px] p-[16px] bg-white md:block">
+  <div class="flex justify-center items-center md:bg-[#F8F7FA] w-full h-[70px] md:h-[153px] rounded-[24px]">
     <img src="logo.png" alt="">
   </div>
 
   <nav class="mt-[20px]">
-    <button routerLink="" (click)="changeActiveButton(1)" [ngClass]="currentActiveButton == 1 ? 'bg-[#7347E1] text-white' : ''" dir="rtl" class="w-full h-[48px] rounded-[50px] p-[16px]  flex items-center mb-[8px]">
+    <button routerLink="" (click)="changeActiveButton(1)" [ngClass]="currentActiveButton == 1 ? 'bg-[#7347E1] text-white' : ''" dir="rtl" class="w-full md:h-[48px] rounded-[50px] p-[16px]  flex items-center mb-[8px]">
       <svg [ngClass]="currentActiveButton != 1 ? 'active-svg': 'isActive'" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1_2358)">
             <path d="M10 13C10 13.5304 10.2107 14.0391 10.5858 14.4142C10.9609 14.7893 11.4696 15 12 15C12.5304 15 13.0391 14.7893 13.4142 14.4142C13.7893 14.0391 14 13.5304 14 13C14 12.4696 13.7893 11.9609 13.4142 11.5858C13.0391 11.2107 12.5304 11 12 11C11.4696 11 10.9609 11.2107 10.5858 11.5858C10.2107 11.9609 10 12.4696 10 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -171,7 +171,7 @@
         </div>
     </button>
 
-    <div class="flex justify-between items-center mt-10">
+    <div class="flex justify-between items-center md:mt-10 mt-1">
       <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" value="" class="sr-only peer">
         <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>

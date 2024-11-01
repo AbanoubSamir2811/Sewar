@@ -22,5 +22,10 @@ export const routes: Routes = [
         data: { title: 'تفاصيل المتجر' }
       }
     ]
-  }
+  },
+  {
+    path: 'notification',
+    loadComponent: () => import('./modules/notificationModule/notifiction-sidebar/notifiction-sidebar.component').then(c => c.NotifictionSidebarComponent),
+    data: { title: 'homePages' }
+  },
 ];

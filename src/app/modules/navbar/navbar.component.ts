@@ -1,14 +1,15 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs';
 import { routes } from '../../app.routes';
 import { ButtonSidebarComponent } from "./button-sidebar/button-sidebar.component";
+import { NotifictionSidebarComponent } from "../notificationModule/notifiction-sidebar/notifiction-sidebar.component";
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgIf, NgFor, ButtonSidebarComponent],
+  imports: [NgIf, NgFor, ButtonSidebarComponent, NotifictionSidebarComponent, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'] // Corrected `styleUrl` to `styleUrls`
 })

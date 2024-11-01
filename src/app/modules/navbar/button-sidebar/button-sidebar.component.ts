@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SidebarComponent } from "../../sidebar/sidebar.component";
+import { SidebarComponent } from '../../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-button-sidebar',
@@ -11,7 +11,13 @@ import { SidebarComponent } from "../../sidebar/sidebar.component";
   styleUrl: './button-sidebar.component.scss'
 })
 export class ButtonSidebarComponent {
-  animteClick(){
-    document.getElementById("default-modal")?.classList.add("animate__fadeOutRight")
+  animateHide(){
+    console.log("first")
+    document.getElementById("sidebar-modal")?.classList.add("animate__fadeOutRight")
+    setTimeout(() => {
+      document.getElementById("sidebar-modal")?.setAttribute("data-modal-hide","sidebar-modal")
+      document.getElementById("sidebar-modal")?.addEventListener("click",()=>{
+      })
+    }, 300);
   }
 }
