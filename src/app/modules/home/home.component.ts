@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ShopComponent } from '../../components/shop/shop.component';
 import { GeneralStatisticsComponent } from './general-statistics/general-statistics.component';
+import { ShopComponent } from './shop/shop.component';
 
 @Component({
   selector: 'app-home',

@@ -16,8 +16,9 @@ export class ButtonSidebarComponent {
     document.getElementById("sidebar-modal")?.classList.add("animate__fadeOutRight")
     setTimeout(() => {
       document.getElementById("sidebar-modal")?.setAttribute("data-modal-hide","sidebar-modal")
-      document.getElementById("sidebar-modal")?.addEventListener("click",()=>{
-      })
+      console.log("hidden")
+      console.log(document.querySelector('body'))
+      document.querySelector('body')?.classList.remove("overflow-hidden")
     }, 300);
   }
 }

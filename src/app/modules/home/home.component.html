@@ -1,4 +1,4 @@
-<div class="md:w-[50vw] w-[90vw] bg-white p-[24px] rounded-[24px]">
+<div class="md:w-[50vw] w-[90vw] max-h-[765px] bg-white p-[24px] rounded-[24px]">
   <div class="flex justify-between items-center">
     <div class="md:w-[140px] w-[66px] h-[32px] bg-[#F8F7FA] rounded-[12px] flex items-center focus:ring-4 focus:outline-none">
       <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="click" class="md:w-[140px] w-[66px] h-[32px] bg-[#F8F7FA] rounded-[12px] flex items-center  justify-evenly focus:outline-none border-0 focus:border-0" type="button">
@@ -55,19 +55,19 @@
   <app-general-statistics></app-general-statistics>
 
   <div class="flex justify-end items-center animate__animated animate__fadeInUp">
-    <div class="bg-[#FB813E] w-[32px] h-[16px] rounded-[4px] mx--[5px] text-[9px] text-white flex justify-evenly">
+    <div class="bg-[#FB813E] w-[32px] h-[16px] rounded-[4px] pt-[2px] mx-[5px] text-[9px] text-white flex justify-evenly">
       <p>جديد</p>
       <p>3</p>
     </div>
-    <div class="mx-[5px]">متاجر بانتظار الموافقة (10)</div>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="mx-[5px] text-[12px] md:text-[14px]">متاجر بانتظار الموافقة (10)</div>
+    <svg class="w-[20px] md:w-[24px] h-[20px] md:h-[24px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M14.387 15.8287C15.192 16.4216 15.9538 16.9818 16.361 18.1984L16.5908 18.8824H7.41033L7.639 18.1984C8.04616 16.9818 8.808 16.4216 9.61417 15.8287L11.3653 14.538C11.7328 14.2669 12.2672 14.2659 12.6358 14.5391L14.387 15.8287ZM15.857 9.81564C17.257 8.78542 19 7.50318 19 3.52942V3H5V3.52941C5 7.50318 6.743 8.78541 8.143 9.81564C9.06116 10.4912 9.66666 10.9369 9.66666 12C9.66666 13.0631 9.06116 13.5088 8.143 14.1833C6.743 15.2146 5 16.4968 5 20.4706V21H19V20.4706C19 16.4968 17.257 15.2146 15.857 14.1833C14.94 13.5088 14.3333 13.0631 14.3333 12C14.3333 10.9369 14.94 10.4912 15.857 9.81564Z" fill="#29213C"/>
       </svg>
   </div>
 
   <hr class="my-[10px]">
 
-  <div class="overflow-y-scroll overflow-hidden h-[500px] animate__animated animate__fadeInUp" id="scroller">
+  <div class="overflow-y-scroll overflow-hidden h-[455px] animate__animated animate__fadeInUp" id="scroller">
     <app-shop></app-shop>
     <app-shop></app-shop>
     <app-shop></app-shop>
